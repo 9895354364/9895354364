@@ -3,22 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Batman</title>
-	<!-- Include Bootstrap CSS -->
+	<title>BATMAN</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEu0zJSFVgYPMJz0WPMJbR" crossorigin="anonymous">
-	<!-- Add custom CSS -->
+          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEu0zJSFVgYPMJz0WPMJbR" crossorigin="anonymous">
 	<style>
 		body {
-			background-image: url("/Documents/black.jpg");
+			background-image: url("../Documents/black.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 			color: #fff;
 			font-family: sans-serif;
 			margin: 0;
 			padding: 0;
 		}
 		.container {
-			margin-left: 335px;
-            margin-top: 30px;
+			margin: 335px;
+            margin: 30px;
 			padding: 20px;
             position: relative;
             height: 530px;
@@ -54,6 +55,29 @@
 			background-color: #11707a;
 			cursor: pointer;
 		}
+		@media only screen and (max-width: 600px) {
+				
+				.container 
+				{			 
+					margin-left: auto;
+					margin-right: auto;
+					height: 500px;
+					width: 70%;
+				}
+                textarea {
+                    height: 40px;                    
+
+				}
+		}
+		@media only screen and (min-width: 600px) {
+				
+				.container 
+				{			
+					margin-left: auto;
+					margin-right: auto;
+					width: 50%;
+				}
+		}
 	</style>
 </head>
 <body>
@@ -86,6 +110,6 @@
 			<button type="submit">Submit</button>
 		</form>
 	</div>
-	<!-- Include Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCX
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCX
+
