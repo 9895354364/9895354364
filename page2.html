@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* Customize styles here */
+        .container {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 150px;
+        height: auto;
+        width: auto;
+        }
+        .member-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .member-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .member-card h4 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .member-card p {
+            margin-top: 5px;
+        }
+        .member-card .label {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        .heading {
+            position: absolute;
+            margin-left: 170px;
+            margin-top: 20px;
+            font-size: 70px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            background-color: #333;
+            color: #f2f2f2;
+        }
+        .fa-chevron-left {
+            margin-right: 5px;
+        }
+		.sidebar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 150px;
+			height: 100%;
+			background: #f8f9fa;
+			padding: 2px;
+			box-shadow: 0 0 10px rgba(68, 68, 68, 0.2);
+			z-index: 999;
+		}
+		.sidebar  {
+			color: #495057;
+		}
+		.sidebar  {
+			color: #343a40;
+		}
+        .sidebar img {
+            max-width: 100%;
+            height: 35px;
+            width: 35px;
+            position: absolute;
+            margin-left: 3px;
+            margin-top: 400px;
+            border-radius: 5px;
+        }
+        .nav-flex-column {
+            position: absolute;
+            width: 20px;
+        }
+        .list-group {
+            position: absolute;
+            margin-top: 55px;
+        }
+        .top {
+            position: absolute;
+            margin-top: 20px;
+        }
+        body {
+            background-repeat: initial;
+            background-size: 100% 100vh;
+        }
+        @media only screen and (max-width: 600px) {
+        
+        .container {
+            margin-top: 80px;
+            margin-left: 80px;
+            width: auto;
+            height: auto;
+        }
+        .heading {
+            margin-left: 70px;
+            font-size: 30px;
+        }
+        .sidebar {
+            position: fixed;
+			top: 0;
+			left: 0;
+			width: auto;
+			height: 100%;
+			background: #f8f9fa;
+			padding: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			z-index: 999;
+            
+        }
+        .back-button {
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+        .nav-flex-column {
+            width: 100%;
+        }
+        .list-group {
+            margin-top: 55px;
+            width: 75px;
+        }
+        .Dashboard {
+            font-size: 50%;
+            font-weight: bold;    
+        }
+        .member-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .member-card img {
+            max-width: 50%;
+        }
+        .heading {
+            position: absolute;
+            margin-left: 100px;
+            font-size: 40px;
+
+        }
+        .top {
+            font-size: smaller;
+        }
+        .sidebar img {
+            position: absolute;
+            margin-top: 440px;
+        }
+    }
+</style>
+</head>
+<body background="C:\myWebsite\img\19366.JPG">        
+    <h1 class="heading">Members</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="../myWebsite/img/sm.jpg" alt="Member 1">
+                    <h4>Santhosh M</h4>
+                    <p><span class="label">Age:</span>20</p>
+                    <p><span class="label">College:</span> BVM College</p>
+                    <p><span class="label">Address:</span> 12 Mile, Pala</p>
+                    <p><span class="label">Course:</span> Computer Science</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">   
+                    <img src="https://via.placeholder.com/150" alt="Member 2">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span> </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member 3">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member 4">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span> </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member 5">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span> </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member 6">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span> </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member 7">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span> </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member 8">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span> </p>        
+               </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member 9">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span> </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" alt="Member 10">
+                    <h4>Name</h4>
+                    <p><span class="label">Age:</span> </p>
+                    <p><span class="label">College:</span> </p>
+                    <p><span class="label">Address:</span> </p>
+                    <p><span class="label">Course:</span> </p>
+                </div>
+            </div>            
+        </div>
+    </div>
+        
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="sidebar">
+                            <div class="sidebar">
+                                <a href="page1.html" class="back-button">
+                                    <i class="fas fa-chevron-left"></i> Back
+                                </a>
+                                <div class="top">
+                                <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page3.html">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">LOGO</a>
+                                </li>
+                                </ul>
+                                <div>
+                                    <div onclick="location.href='page4.html';">
+                                        <img src="../myWebsite/img/Batman.jpg" alt="Sangeeth">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+
+    
